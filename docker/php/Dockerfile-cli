@@ -17,7 +17,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 
 RUN wget https://get.symfony.com/cli/installer -O - | bash && mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 
-RUN usermod -u $DOCKER_UID www-data && groupmod -g $DOCKER_GID www-data && chown -R www-data:www-data /var/www/html
+RUN usermod -u $DOCKER_UID www-data && groupmod -g $DOCKER_GID www-data && chown -R www-data:www-data /var/www/
 
 WORKDIR /var/www
 
