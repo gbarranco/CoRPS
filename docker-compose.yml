@@ -43,7 +43,7 @@ services:
         DOCKER_GID: ${DOCKER_GID} # replace by your group id
     restart: on-failure
     volumes:
-      - ./apps/eclipse-phase:/var/www/html
+      - ./src:/var/www/html
       - ./docker/php/Makefile:/var/www/Makefile
     env_file:
       - .env
