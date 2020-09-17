@@ -46,5 +46,5 @@ services:
       - ./docker/php/Makefile:/var/www/Makefile
     env_file:
       - .env
-    #user: ${LOCAL_USER}
+    user: ${LOCAL_USER}
 
